@@ -4,28 +4,28 @@ using System.Runtime.Serialization;
 double n1, n2;
 int opcao = 0;
 
-void somar()
+double somar()
 {
     Console.Clear();
-    Console.WriteLine($"Soma {n1} + {n2} = {n1 + n2}");
+    return n1  + n2;
 }
 
-void subtrair()
+double subtrair()
 {
     Console.Clear();
-    Console.WriteLine($"Subtração {n1} - {n2} = {n1 - n2}");
+    return n1 - n2;
 }
 
-void multiplicar()
+double multiplicar()
 {
     Console.Clear();
-    Console.WriteLine($"Multiplicação {n1} * {n2}  = {n1 * n2}");
+    return n1 * n2;
 }
 
-void dividir()
+double dividir()
 {
     Console.Clear();
-    Console.WriteLine($"Divisão {n1} / {n2} = {n1 / n2}");
+    return n1 / n2;
 }
 int Menu()
 {
@@ -58,17 +58,17 @@ while (opcao != 5)
             Console.ReadLine();
             break;
         case 1:
-            somar();
+            Console.WriteLine($"Soma = {somar()}");
             Console.Write("Enter continue...");
             Console.ReadLine();
             break;
         case 2:
-            subtrair();
+            Console.WriteLine($"Soma = {subtrair()}");
             Console.Write("Enter continue...");
             Console.ReadLine();
             break;
         case 3:
-            multiplicar();
+            Console.WriteLine($"Soma = {multiplicar()}");
             Console.Write("Enter continue...");
             Console.ReadLine();
             break;
@@ -82,7 +82,7 @@ while (opcao != 5)
             }
             else
             {
-                dividir();
+                Console.WriteLine($"Soma = {dividir()}");
                 Console.Write("Enter continue...");
                 Console.ReadLine();
             }
