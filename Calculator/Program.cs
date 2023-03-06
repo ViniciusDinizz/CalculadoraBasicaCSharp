@@ -36,9 +36,8 @@ int Menu()
     Console.WriteLine("4-Dividir");
     Console.WriteLine("5-Sair");
     Console.Write("Escolha uma opção: ");
-    opcao = int.Parse(Console.ReadLine());
-
-    return opcao;
+    
+    return opcao = int.Parse(Console.ReadLine());
 }
 
 Console.Write("Informe o primeiro número1: ");
@@ -54,23 +53,15 @@ while (opcao != 5)
         default:
             Console.Clear();
             Console.WriteLine("Opção invalida.");
-            Console.Write("Enter continue...");
-            Console.ReadLine();
             break;
         case 1:
-            Console.WriteLine($"Soma = {somar()}");
-            Console.Write("Enter continue...");
-            Console.ReadLine();
+            Console.WriteLine($"Soma {n1} + {n2} = {somar()}");
             break;
         case 2:
-            Console.WriteLine($"Soma = {subtrair()}");
-            Console.Write("Enter continue...");
-            Console.ReadLine();
+            Console.WriteLine($"Subtração {n1} = {n2} = {subtrair()}");
             break;
         case 3:
-            Console.WriteLine($"Soma = {multiplicar()}");
-            Console.Write("Enter continue...");
-            Console.ReadLine();
+            Console.WriteLine($"Multiplicação {n1} * {n2} = {multiplicar()}");
             break;
         case 4:
             if (n2 == 0)
@@ -82,14 +73,13 @@ while (opcao != 5)
             }
             else
             {
-                Console.WriteLine($"Soma = {dividir()}");
-                Console.Write("Enter continue...");
-                Console.ReadLine();
+                Console.WriteLine($"Divisão {n1} / {n2} = {dividir()}");
             }
             break;
         case 5:
             Console.Write("Até logo.");
-            Console.ReadLine();
             break;
     }
+    Console.Write("Enter continue...");
+    Console.ReadLine();
 }
