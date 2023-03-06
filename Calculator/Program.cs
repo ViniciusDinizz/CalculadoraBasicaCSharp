@@ -73,7 +73,7 @@ while (opcao != 5)
             }
             else
             {
-                Console.WriteLine($"Divisão {num1} / {num2} = {dividir()}");
+                Console.WriteLine($"Divisão {num1} / {num2} = {dividir().ToString("F2")}");
             }
             break;
         case 5:
